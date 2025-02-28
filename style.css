@@ -1,0 +1,41 @@
+body {
+    background-image: url(./assets/bookshelf.jpg);
+    color: bisque;
+    height: 100dvh;
+}
+
+h1 {
+    text-decoration: underline;
+}
+label {
+    text-decoration: underline;
+
+}
+
+input, button {
+    border-radius: 5px;
+    border: none;
+}
+input:focus {
+    outline-color: rgb(28, 28, 98);
+}
+
+#quote {
+    width: 600px;;
+}
+
+.author {
+    font-weight: 600;
+}
+
+#quote-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.quote {
+    width: fit-content;
+    border-bottom: 2px dotted white;
+    padding: 20px;
+}

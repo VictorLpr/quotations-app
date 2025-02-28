@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotations-app</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Mes citations</h1>
@@ -12,18 +12,12 @@
     <h3>0 citations</h3>
     <hr>
     
-    <form action="citations" id="new-quote" autocomplete="off">
-        <label for="quote">citation
-            <input type="text" id="quote" />
-        </label>
-        <label for="name">
-            Auteur
-            <input type="text" id="name" />
-        </label>
-        <label for="submit">
-            Valider
-            <button type="submit" id="submit"></button>
-        </label>
+    <form id="new-quote" class="la" >
+        <label for="quote">citation</label>
+        <input type="text" name="quote" id="quote" />
+        <label for="name">Auteur</label>
+        <input type="text" name="name" id="name" />
+        <button type="submit">Valider</button>
     </form>
     <hr>
     <div id="quote-list">

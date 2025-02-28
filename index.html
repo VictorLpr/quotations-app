@@ -9,22 +9,18 @@
 <body>
     <h1>Mes citations</h1>
     <h2>Gestionnaire de citations en ligne</h2>
-    <h3>0 citations</h3>
+    <h3 id="count">0 citation</h3>
     <hr>
     
-    <form id="new-quote" class="la" >
+    <form id="new-quote" >
         <label for="quote">citation</label>
-        <input type="text" name="quote" id="quote" />
+        <input type="text" name="quote" id="quote" required/>
         <label for="name">Auteur</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required/>
         <button type="submit">Valider</button>
     </form>
     <hr>
     <div id="quote-list">
-        <div class="quote">
-            <p class="text">"On ne naît pas femme, on le devient."</p>
-            <p class="author">Simone de Beauvoir</p>
-        </div>
     </div>
 </body>
 </html>
